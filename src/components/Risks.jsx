@@ -17,8 +17,10 @@ const shimmers = [
 
 const cardData = [
     {
-        title: 'Security',
-        description: 'Lack of centralized access control, weak authentication, and unmanaged endpoints leave APIs vulnerable to threats and breaches.',
+        title: "Cloud Hosting",
+        description:
+          "Deploy your platform on secure and scalable cloud infrastructure, ensuring high availability, performance, and the flexibility to grow as your business expands.",
+
         icon: (
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 2L4 5.5V11C4 15.42 7.56 19.58 12 21C16.44 19.58 20 15.42 20 11V5.5L12 2Z" stroke="#218CA1" strokeWidth="1.6" strokeLinejoin="round" />
@@ -27,8 +29,10 @@ const cardData = [
         ),
     },
     {
-        title: 'Scalable',
-        description: 'Without a scalable framework, growing API usage leads to bottlenecks, degraded performance, and infrastructure overhead.',
+        title: "Payment Gateway Integration",
+        description:
+          "Seamlessly integrate with trusted payment gateways to support secure online transactions, multiple payment methods, and smooth checkout experiences for customers.",
+
         icon: (
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="4" y="4" width="14" height="17" rx="2" stroke="#218CA1" strokeWidth="1.6" />
@@ -39,8 +43,10 @@ const cardData = [
         ),
     },
     {
-        title: 'Governance',
-        description: 'Fragmented API ownership causes inconsistent policies, limited visibility, and regulatory compliance risks across teams.',
+        title: "White-label Marketplace",
+        description:
+          "Launch your marketplace under your own brand with customizable design, domain, and branding elements, giving you full control over the customer experience.",
+
         icon: (
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3 10H21M3 10L12 4L21 10M3 10V19H21V10" stroke="#218CA1" strokeWidth="1.6" strokeLinejoin="round" />
@@ -49,8 +55,10 @@ const cardData = [
         ),
     },
     {
-        title: 'Life cycle Management',
-        description: 'Without end-to-end lifecycle visibility, APIs are hard to version, deprecate, or monitor leading to shadow APIs and chaos.',
+        title: "ONDC Compliance Support",
+        description:
+          "Built to support ONDC standards, enabling your platform to connect with the Open Network for Digital Commerce and participate in India's growing digital commerce ecosystem.",
+
         icon: (
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4 12C4 7.58 7.58 4 12 4C14.76 4 17.21 5.38 18.72 7.5" stroke="#218CA1" strokeWidth="1.6" strokeLinecap="round" />
@@ -105,7 +113,7 @@ const Risks = () => {
 
                 {/* Pill label — no shimmer behind this */}
                 <span className="inline-block text-[#218CA1] text-[11px] md:text-[13px] border border-[#218CA1] rounded-full px-3 py-[5px] mb-5 md:mb-6 tracking-wide">
-                    Landscape
+                    Deployment Options
                 </span>
 
                 {/* Shimmer wrapper — starts from heading */}
@@ -132,16 +140,16 @@ const Risks = () => {
                     </div>
 
                     {/* Heading */}
-                    <h2 className="relative text-center font-medium text-[20px] md:text-[40px] leading-[1.25] tracking-[-0.02em] text-[#2D1206] max-w-[280px] md:max-w-3xl">
-                        Risks of Disjointed API Infrastructure
-                    </h2>
+                    {/* <h2 className="relative text-center font-medium text-[20px] md:text-[40px] leading-[1.25] tracking-[-0.02em] text-[#2D1206] max-w-[280px] md:max-w-3xl"> */}
+                    {/*     Risks of Disjointed API Infrastructure */}
+                    {/* </h2> */}
 
-                    {/* Subtitle */}
-                    <p className="relative text-center text-[#4C4C4C] mt-4 md:mt-5 text-[20px] md:text-[20px] leading-[1.6] max-w-[300px] md:max-w-lg">
-                        APIs power modern digital ecosystems,
-                        <br className="hidden md:block" />
-                        but managing them remains a challenge.
-                    </p>
+                    {/* /!* Subtitle *!/ */}
+                    {/* <p className="relative text-center text-[#4C4C4C] mt-4 md:mt-5 text-[20px] md:text-[20px] leading-[1.6] max-w-75 md:max-w-lg"> */}
+                    {/*     APIs power modern digital ecosystems, */}
+                    {/*     <br className="hidden md:block" /> */}
+                    {/*     but managing them remains a challenge. */}
+                    {/* </p> */}
 
                     {/* Cards grid */}
                     <div
@@ -151,7 +159,7 @@ const Risks = () => {
                         {cardData.map((card, i) => (
                             <div
                                 key={card.title}
-                                className="risk-card flex flex-col gap-4 p-4 rounded-2xl bg-white md:w-[242px] md:h-[332px]"
+                                className="risk-card flex flex-col gap-4 p-4 rounded-2xl bg-white md:w-60.5 md:h-83"
                                 style={{
                                     border: '1px solid #DEDB00',
                                     boxShadow: '0 0 0 1px rgba(222,219,0,0.15)',
@@ -166,12 +174,12 @@ const Risks = () => {
                                 </div>
 
                                 {/* Title */}
-                                <h3 className="font-medium text-[16px] md:text-[24px] text-[#2D1206] leading-tight">
+                                <h3 className="font-medium text-[16px] md:text-lg text-[#2D1206] leading-tight">
                                     {card.title}
                                 </h3>
 
                                 {/* Description */}
-                                <p className="text-[#5A5A5A] text-[12px] md:text-[16px]">
+                                <p className="text-[#5A5A5A] text-[12px] md:text-[16px] line-clamp-6">
                                     {card.description}
                                 </p>
                             </div>

@@ -8,31 +8,37 @@ const singleVendorFeatures = [
     title: "Product Management",
     description:
       "Easily add, update, and organize products with detailed descriptions, images, pricing, categories, and variants. Manage your entire product catalog efficiently from an intuitive dashboard.",
+    image: 'https://framerusercontent.com/images/S1HajUVfQb9QD69OcEaRkP0Oho.png',
   },
   {
     title: "Secure Payment Integration",
     description:
       "Accept payments securely through trusted payment gateways. Support multiple payment methods including credit cards, debit cards, UPI, and digital wallets to provide a smooth checkout experience.",
+    image: 'https://framerusercontent.com/images/S1HajUVfQb9QD69OcEaRkP0Oho.png',
   },
   {
     title: "Order Management",
     description:
       "Track and manage orders from purchase to delivery. View order details, update order status, process refunds, and keep customers informed throughout the fulfillment process.",
+    image: 'https://framerusercontent.com/images/S1HajUVfQb9QD69OcEaRkP0Oho.png',
   },
   {
     title: "Coupon System",
     description:
       "Create promotional campaigns using discount coupons, seasonal offers, and special deals to attract new customers and increase repeat purchases.",
+    image: 'https://framerusercontent.com/images/S1HajUVfQb9QD69OcEaRkP0Oho.png',
   },
   {
     title: "Inventory Control",
     description:
       "Monitor stock levels in real time to prevent overselling. Automatically update inventory after each purchase and receive alerts when stock runs low.",
+    image: 'https://framerusercontent.com/images/S1HajUVfQb9QD69OcEaRkP0Oho.png',
   },
   {
     title: "Shipping API Integration",
     description:
       "Integrate with leading shipping providers to automate order fulfillment. Generate shipping labels, calculate delivery costs, and track shipments directly from your dashboard.",
+    image: 'https://framerusercontent.com/images/S1HajUVfQb9QD69OcEaRkP0Oho.png',
   },
 ];
 
@@ -41,36 +47,43 @@ export const multiVendorFeatures = [
     title: "Vendor Onboarding",
     description:
       "Streamline the process of bringing new vendors onto your platform with a simple registration and approval workflow. Vendors can easily create accounts, submit business details, and start listing products quickly.",
+    image: 'https://framerusercontent.com/images/S1HajUVfQb9QD69OcEaRkP0Oho.png',
   },
   {
     title: "KYC Verification",
     description:
       "Ensure trust and compliance with integrated KYC verification. Validate vendor identities and business credentials to maintain a secure and reliable marketplace ecosystem.",
+    image: 'https://framerusercontent.com/images/S1HajUVfQb9QD69OcEaRkP0Oho.png',
   },
   {
     title: "Product Approval Workflow",
     description:
       "Maintain quality and compliance by reviewing vendor product listings before they go live. Admins can approve, reject, or request modifications to ensure marketplace standards.",
+    image: 'https://framerusercontent.com/images/S1HajUVfQb9QD69OcEaRkP0Oho.png',
   },
   {
     title: "Admin Price Negotiation",
     description:
       "Enable administrators to collaborate with vendors on pricing strategies. Adjust pricing structures or negotiate deals to maintain competitive offerings across the marketplace.",
+    image: 'https://framerusercontent.com/images/S1HajUVfQb9QD69OcEaRkP0Oho.png',
   },
   {
     title: "Commission Configuration",
     description:
       "Configure flexible commission structures for vendors based on categories, products, or vendors. Automatically calculate commissions and manage payouts efficiently.",
+    image: 'https://framerusercontent.com/images/S1HajUVfQb9QD69OcEaRkP0Oho.png',
   },
   {
     title: "Vendor Dashboards",
     description:
       "Provide vendors with dedicated dashboards where they can manage products, track orders, monitor sales performance, and analyze business insights.",
+    image: 'https://framerusercontent.com/images/S1HajUVfQb9QD69OcEaRkP0Oho.png',
   },
   {
     title: "ONDC-ready Architecture",
     description:
       "Built with support for ONDC standards, enabling seamless integration with the Open Network for Digital Commerce and expanding marketplace reach across the digital commerce ecosystem.",
+    image: 'https://framerusercontent.com/images/S1HajUVfQb9QD69OcEaRkP0Oho.png',
   },
 ];
 
@@ -187,6 +200,7 @@ export default function EcommerceFeatures() {
                       index={index}
                       title={feature.title}
                       description={feature.description}
+                      image={feature.image}
                     />
                   </div>
                 ))}
@@ -208,6 +222,7 @@ export default function EcommerceFeatures() {
                       index={index}
                       title={feature.title}
                       description={feature.description}
+                      image={feature.image}
                     />
                   </div>
                 ))}
@@ -215,33 +230,6 @@ export default function EcommerceFeatures() {
             )}
           </AnimatePresence>
         </div>
-        {/* <Tabs.Panel value="single-vendor" className="container mx-auto py-10"> */}
-        {/*   <div className="flex flex-col items-center gap-y-24"> */}
-        {/*     {singleVendorFeatures.map((feature, index) => ( */}
-        {/*       <div key={index} className="sticky top-40"> */}
-        {/*         <FeatureCard */}
-        {/*           index={index} */}
-        {/*           title={feature.title} */}
-        {/*           description={feature.description} */}
-        {/*         /> */}
-        {/*       </div> */}
-        {/*     ))} */}
-        {/*   </div> */}
-        {/* </Tabs.Panel> */}
-
-        {/* <Tabs.Panel value="multi-vendor" className="container mx-auto py-10"> */}
-        {/*   <div className="flex flex-col items-center gap-y-24"> */}
-        {/*     {multiVendorFeatures.map((feature, index) => ( */}
-        {/*       <div key={index} className="sticky top-40"> */}
-        {/*         <FeatureCard */}
-        {/*           index={index} */}
-        {/*           title={feature.title} */}
-        {/*           description={feature.description} */}
-        {/*         /> */}
-        {/*       </div> */}
-        {/*     ))} */}
-        {/*   </div> */}
-        {/* </Tabs.Panel> */}
       </Tabs.Root>
     </section>
   );

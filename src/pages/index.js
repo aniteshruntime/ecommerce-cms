@@ -17,12 +17,12 @@ const index = () => {
       <Navbar />
       <Hero />
       <Features />
-      {/* <Risks /> */}
       {/* <FeaturesModule /> */}
       <EcommerceFeatures/>
       {/* <Benefits /> */}
       <SuitableForSection/>
-      <Collaborations />
+      <Risks />
+      {/* <Collaborations /> */}
       {/* <Blogs /> */}
       <Footer />
     </div>
