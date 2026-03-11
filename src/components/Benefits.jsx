@@ -219,7 +219,7 @@ const IllustrationDev = () => (
     </svg>
 );
 
-const StripedBg = () => {
+export const StripedBg = () => {
     // Replicate the yappes.com background exactly:
     // Base solid background with 24 stripes using a linear-gradient overlay
     const total = 24;
@@ -346,7 +346,7 @@ const Benefits = () => {
                 <div className="mb-7 md:mb-10">
                     <span
                         className="inline-block bg-white text-[#218CA1] text-[13px] md:text-[14px] font-semibold
-                       rounded-full px-[22px] py-[6px] tracking-wide"
+                       rounded-full px-5.5 py-1.5 tracking-wide"
                     >
                         Benefit
                     </span>

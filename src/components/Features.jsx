@@ -65,10 +65,10 @@ const Features = () => {
             {/* Heading */}
             <h2 className="text-center font-medium leading-[1.4] tracking-[-0.02em] text-[#2D1206]">
                 <span className="block text-[22px] md:text-[40px]">
-                    Unified API Platform built for
+                    Unified Ecommerce Platform built for
                 </span>
                 <span
-                    className="block bg-gradient-to-r from-[#218CA1] to-[#DEDB00] text-transparent bg-clip-text text-[22px] md:text-[40px] leading-normal"
+                    className="block bg-linear-to-r from-[#218CA1] to-[#DEDB00] text-transparent bg-clip-text text-[22px] md:text-[40px] leading-normal"
                     style={{
                         transition: animState === 'enter' ? 'none' : 'opacity 0.2s cubic-bezier(0.4,0,0.2,1), transform 0.2s cubic-bezier(0.4,0,0.2,1)',
                         minHeight: '1.4em',
@@ -81,8 +81,8 @@ const Features = () => {
             </h2>
 
             {/* Description */}
-            <p className="text-center text-[#4C4C4C] max-w-[400px] mt-4 md:mt-6 max-w-[320px] md:max-w-lg text-[15px] md:text-[20px] leading-[1.65] md:px-0">
-                Manage APIs end-to-end design, publish, secure, monitor, and scale without cobbling together multiple tools.
+            <p className="text-center text-[#4C4C4C] mt-4 md:mt-6 max-w-80 md:max-w-lg text-[15px] md:text-xl leading-[1.65] md:px-0">
+                Manage Ecommerces end-to-end design, publish, secure, monitor, and scale without cobbling together multiple tools.
             </p>
 
             {/* Dashboard Screenshot Card */}
@@ -110,7 +110,7 @@ const Features = () => {
                         <img
                             src="/api_manager_screenshot2.jpg"
                             alt="Yappes API Manager Dashboard"
-                            className="w-full h-auto block mb-[30px] rounded-b-2xl object-cover"
+                            className="w-full h-auto block mb-7.5 rounded-b-2xl object-cover"
                             onError={(e) => {
                                 e.target.style.display = 'none';
                                 e.target.nextSibling.style.display = 'flex';

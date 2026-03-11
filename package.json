@@ -9,8 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@base-ui/react": "^1.2.0",
     "@lottiefiles/dotlottie-react": "^0.18.1",
     "cheerio": "^1.2.0",
+    "motion": "^12.35.2",
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3"

@@ -1,3 +1,5 @@
+import EcommerceFeatures from "@/components/sections/EcommerceFeatures";
+import SuitableForSection from "@/components/sections/SuitableForSection";
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
@@ -15,13 +17,14 @@ const index = () => {
       <Navbar />
       <Hero />
       <Features />
-      <Risks />
-      <FeaturesModule />
-      <Benefits />
+      {/* <Risks /> */}
+      {/* <FeaturesModule /> */}
+      <EcommerceFeatures/>
+      {/* <Benefits /> */}
+      <SuitableForSection/>
       <Collaborations />
-      <Blogs />
+      {/* <Blogs /> */}
       <Footer />
-
     </div>
   )
 }

@@ -16,9 +16,9 @@ const Hero = () => {
             `}</style>
 
             {/* Headings */}
-            <h1 className="text-center mt-[30px] font-bold leading-[1.2] tracking-[-0.02em] text-[#2D1206] animate-fade-in-up delay-100">
-                <span className="block bg-gradient-to-r from-[#218CA1] to-[#DEDB00] text-transparent bg-clip-text mt-[30px] text-[40px] md:text-[64px] font-semibold mb-2 md:mb-0">
-                    Unified API <br className="md:hidden" /> Management
+            <h1 className="text-center mt-7.5 font-bold leading-[1.2] tracking-[-0.02em] text-[#2D1206] animate-fade-in-up delay-100">
+                <span className="block bg-linear-to-r from-[#218CA1] to-[#DEDB00] text-transparent bg-clip-text mt-[30px] text-[40px] md:text-[64px] font-semibold mb-2 md:mb-0">
+                    Unified Ecommerce<br className="md:hidden" /> Management
                 </span>
                 <span className="block text-[40px] md:text-[64px] font-semibold">
                     Secure<span className="md:hidden">,</span><span className="hidden md:inline"> &</span> <br className="md:hidden" /> Scalable <br className="md:hidden" /> Platform
@@ -27,7 +27,7 @@ const Hero = () => {
 
             {/* Description */}
             <p className="text-center text-[#474747] mt-6 md:mt-4 max-w-3xl text-base md:text-[20px] leading-[1.4] px-4 animate-fade-in-up delay-200">
-                End-to-End API management <br className="md:hidden" />
+                End-to-End Ecommerce management <br className="md:hidden" />
                 solution that streamlines design, <br className="hidden md:inline" />
                 security, publishing, monitoring, and <br className="md:hidden" />
                 monetisation.

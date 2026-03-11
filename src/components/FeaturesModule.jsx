@@ -307,7 +307,7 @@ const FeaturesModule = () => {
             <section
                 ref={sectionRef}
                 className="fm-section"
-                style={{ height: `${sectionHeight}px` }}
+                style={{ height: `${sectionHeight}px`, marginBottom: "10px" }}
             >
                 {/* Sticky frame — stays fixed to viewport while section scrolls beneath */}
                 <div className="fm-sticky">
